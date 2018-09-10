@@ -65,3 +65,4 @@ typings/
 .vscode
 
 .DS_Store
+package-lock.json

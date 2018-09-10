@@ -1,30 +1,36 @@
-const assert = require('assert')
-const make_person = require('./objects')
+const assert = require('assert');
+const Person = require('./objects');
 
-describe("Make Person", () => {
-  it("Fields", () => {
-     const res = make_person("barry",23)
-     assert.equal(res.name,"barry")
-     assert.equal(res.age,23)
-  })
-  it("Beer", () => {
-     let res = make_person("barry",23)
-     assert.equal(res.can_drink(),true)
-     res = make_person("harry",5)
-     assert.equal(res.can_drink(),false)
-  })
-  it("Edge Case", () => {
-     let res = make_person("barry",18)
-     assert.equal(res.can_drink(),true)
-  })
-  it("binding", () => {
-     let barry = make_person("barry",18)
-     let billy = make_person("billy",5)
-     assert.equal(barry.can_drink(),true)
-     assert.equal(billy.can_drink(),false)
-     barry.age = 0
-     billy.age = 19
-     assert.equal(barry.can_drink(),false)
-     assert.equal(billy.can_drink(),true)
-  })
-})
+describe(' Person', () => {
+
+  it('Fields', () => {
+     const res = new Person('barry',23);
+     assert.equal(res.name,'barry');
+     assert.equal(res.age,23);
+  });
+
+  it('Beer', () => {
+     let res = new Person('barry',23);
+     assert.equal(res.canDrink(),true);
+     res = new Person('harry',5);
+     assert.equal(res.canDrink(),false);
+  });
+
+  it('Edge Case', () => {
+     const res = new Person('barry',18);
+     assert.equal(res.canDrink(),true);
+  });
+
+  it('binding', () => {
+     const barry = new Person('barry',18);
+     const billy = new Person('billy',5);
+     assert.equal(barry.canDrink(),true);
+     assert.equal(billy.canDrink(),false);
+     barry.age = 0;
+     billy.age = 19;
+     assert.equal(barry.canDrink(),false);
+     assert.equal(billy.canDrink(),true);
+  });
+
+});
+

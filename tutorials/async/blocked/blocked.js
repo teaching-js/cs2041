@@ -21,7 +21,7 @@ function init() {
   function slow() {
     let i = 0;
     while(i < 2000000000) i++;
-    alert("Done doing slow stuff!");
+    alert('Done doing slow stuff!');
   }
 
   // just remove defunct listener

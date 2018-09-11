@@ -31,11 +31,11 @@
   test with `node test.js`
 */
 
-const json = require('./stats.json')
+const json = require('./stats.json');
 
-function count_stats(list) {
+function countStats(list) {
   // HINT: maybe REDUCE the problem ;)
-
+  console.log(list, json);
 }
 
-module.exports = count_stats
+module.exports = countStats;

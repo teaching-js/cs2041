@@ -20,4 +20,4 @@ function function_dispatcher(function_list, args_list) {
    
 }
 
-module.exports = function_dispatcher
+module.exports = function_dispatcher;

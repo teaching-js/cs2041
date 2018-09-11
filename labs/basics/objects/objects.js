@@ -5,7 +5,7 @@
  * can_drink which returns true of the
  * person is >= 18 and false otherwise
  *
- * let me = makePerson("sam",91)
+ * const me = makePerson("sam",91)
  * me.name should be "sam"
  * me.age should be 91
  * me.can_drink() should be true

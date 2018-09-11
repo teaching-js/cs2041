@@ -1,8 +1,8 @@
 
 function init() {
 
-  const out = document.getElementById('output')
-  window.addEventListener('click', clicker)
+  const out = document.getElementById('output');
+  window.addEventListener('click', clicker);
 
   function clicker(event) {
     out.innerText =

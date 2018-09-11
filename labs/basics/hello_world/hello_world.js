@@ -3,6 +3,7 @@
 // should return the new string.
 function hello(name) {
    // ur code here.
+   return name;
 }
 
-module.exports = hello
+module.exports = hello;

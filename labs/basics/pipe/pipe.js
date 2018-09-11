@@ -13,4 +13,4 @@ function pipe (...functions) {
 
 // or const pipe = (...functions) =>
 
-module.exports = pipe
+module.exports = pipe;

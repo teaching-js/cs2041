@@ -15,9 +15,8 @@
 
 */
 
-function function_dispatcher(function_list, args_list) {
-   /* Try to MAP out the problem */
-   
+function function_dispatcher(functionList, argsList) {
+   console.log(functionList, argsList);
 }
 
 module.exports = function_dispatcher;

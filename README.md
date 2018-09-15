@@ -1,18 +1,19 @@
 # COMP2041 JavaScript Course Material
 
-This repo contains Tutorial and Lab material for `COMP2041` Software Construction.
+This repo contains Tutorial and Lab material for COMP2041 Software Construction.
 To use this material to its full extent requires running an http server in the project root.
 Sound complicated? It's not, we've made all the hard stuff simple.
 
 Just do this.
 ```bash
 # in this directory
-npm install
-# And .. you're done
-npm start
+$ npm install
 
-# or with node on the cse lab machines, again, from this directory
-2041 http-server
+# And .. you're done
+$ npm start
+
+# or with node on the cse lab machines
+$ 2041 http-server
 ```
 
 ## Tests
@@ -29,7 +30,7 @@ We strongly encourage you to read as much as you can, watch videos to get a bett
 best practice web development.
 
 * [Course Website](https://cgi.cse.unsw.edu.au/~cs2041/18s2/flask.cgi/index.html)
-* [Additional Resources](resources)
+* [Additional Resources](resources.md)
 
 ## Disclaimer:
 Learning any programming language in three weeks is **impossible**,

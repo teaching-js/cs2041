@@ -6,7 +6,7 @@
     "test:dom": "npx mocha tests/dom/**/*.js",
     "test:async": "npx mocha tests/async/**/*.js",
     "test:basic": "npx mocha tests/basics/**/*.js",
-    "test": "npm run test:basic && npm run test:async && npm run test:dom",
+    "test": "npm run test:basic",
     "lint": "npx eslint labs/**/*.js tutorials/**/*.js",
     "start": "npx http-server"
   },

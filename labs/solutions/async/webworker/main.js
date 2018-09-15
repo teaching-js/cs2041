@@ -8,8 +8,8 @@
         worker.postMessage('getImg');
     }
 
-    function postImage({ data }) {
-        image.src = data ;
+    function postImage({data: { url }}) {
+        image.src = url;
     }
 
     worker.addEventListener('message', postImage);

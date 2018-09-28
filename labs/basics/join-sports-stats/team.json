@@ -1,5 +1,5 @@
 {
-    "results": [
+    "players": [
         {
             "id": 112814,
             "matches": "123",
@@ -25,5 +25,9 @@
             "matches": "567",
             "tries": "55"
         }
-    ]
+    ],
+    "team": {
+        "coach": "Barry Cassidy",
+        "id": 13
+    }
 }

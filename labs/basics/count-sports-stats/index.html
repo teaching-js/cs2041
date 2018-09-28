@@ -1,0 +1,69 @@
+
+<p>Given a list of career stats for a team of rugby players in the data format below:</p>
+<pre>
+<code>
+{ 
+    "players": [
+        {
+            "id": 112814,
+            "matches": "123",
+            "tries": "11"
+        }
+    ]
+}
+
+</code>
+</pre>
+<p>Return an object of the form:</p>
+<pre>
+<code>
+{
+    "totalMatches": m,
+    "totalTries": t
+}
+</code>
+</pre>
+  
+<p>
+Where <em>m</em> is the sum of all matches for all games
+and <em>t</em> is the sum of all tries for all games.
+</p>
+
+<p>For example, the following input should match the 
+    following output exactly.
+</p>
+<pre>
+<code>
+// input
+{ 
+    "players": [
+        {"id": 1,"matches": "123", "tries": "11"},
+        {"id": 2,"matches": "1",   "tries": "1"},
+        {"id": 3,"matches": "2",   "tries": "5"}
+    ]
+}
+// output
+{
+    matches: 126,
+    tries: 17
+}
+</code>
+</pre>
+
+<p>Your code must use the format below as a starting point:</p>
+
+<pre>
+<code>
+// some sample data
+const data = require('./data.json');
+
+function countStats(list) {
+    // HINT: maybe REDUCE the problem ;)
+    // And be careful of dynamic types
+    console.log(list, data);
+}
+
+// do not change this line.
+module.exports = countStats;
+</code>
+</pre>

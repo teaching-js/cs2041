@@ -5,14 +5,19 @@
  * can_drink which returns true of the
  * person is >= 18 and false otherwise
  *
- * const me = makePerson("sam",91)
+ * let me = makePerson("sam",91)
  * me.name should be "sam"
  * me.age should be 91
- * me.can_drink() should be true
+ * me.canDrink() should be true
  */
 
-function Person(name, age) {
-    console.log(name, age);
+function Person (name, age) {
+   this.age = age;
+   this.name = name;
 }
+
+Person.prototype.canDrink = function() {
+    return this.age >= 18;
+};
 
 module.exports = Person;

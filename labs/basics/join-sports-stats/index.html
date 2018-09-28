@@ -1,0 +1,118 @@
+
+<p>Given a list of career stats for a team of rugby players, 
+    a list of player names, and a list of team names, in the format below:
+</p>
+<pre>
+<code>
+// players
+{ 
+    "players": [
+        {
+            "id": 112814,
+            "matches": "123",
+            "tries": "11"
+        }
+    ],
+    "team": {
+        "id": 10,
+        "coach": "John Simmons"
+    }
+}
+// names
+{
+    "names": [
+        {
+            "id": 112814,
+            "name": "Greg Growden"
+        }
+    ]
+}
+// teams
+{
+    "teams": [
+        {
+            "id": 10,
+            "team": "NSW Waratahs"
+        }
+    ]
+}
+</code>
+</pre>
+<p>Write a program that returns a 'team sheet' that lists
+   the team, coach, players in that order in the following list format.
+</p>
+<pre>
+<code>
+[
+    "Team Name, coached by CoachName",
+    "1. PlayerName",
+    "2. PlayerName"
+    ....
+]
+</code>
+</pre>
+  
+<p>
+Where each element is a string, and the order of the players
+is ordered by the number of matches played to the least matches played.
+</p>
+
+<p>For example, the following input should match the 
+    following output exactly.
+</p>
+<pre>
+<code>
+// input data
+{ 
+    "players": [
+        {"id": 1,"matches": "123", "tries": "11"},
+        {"id": 2,"matches": "1",   "tries": "1"},
+        {"id": 3,"matches": "2",   "tries": "5"}
+    ],
+    "team": {
+        "id": 10,
+        "coach": "John Simmons"
+    }
+}
+
+{
+    "names": [
+        {"id": 1, "John Fake"},
+        {"id": 2, "Jimmy Alsofake"},
+        {"id": 3, "Jason Fakest"}
+    ]
+}
+
+{
+    "teams": [
+        {"id": 10, "Greenbay Packers"},
+    ]
+}
+
+// output
+[
+    "Greenbay Packers, coached by John Simmons",
+    "1. John Fake",
+    "2. Jason Fakest",
+    "3. Jimmy Alsofake"
+]
+</code>
+</pre>
+
+<p>Your code must use the format below as a starting point:</p>
+
+<pre>
+<code>
+// some sample data
+const team  = require('./team.json');
+const names = require('./names.json');
+const teams = require('./teams.json');
+
+function makeTeamList(team, names, teams) {
+    // Take it step by step.
+}
+
+// do not change this line.
+module.exports = makeTeamList;
+</code>
+</pre>

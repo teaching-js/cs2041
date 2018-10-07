@@ -7,7 +7,7 @@ function init() {
   function clicker(event) {
     out.innerText =
     `Element Clicked: ${event.target.tagName}\n\
-      Text Content: ${event.target.innerText}`;
+      Click Position: ${event.x}, ${event.y}`;
   }
 
   document.removeEventListener('DOMContentLoaded', init);

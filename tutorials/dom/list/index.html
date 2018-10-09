@@ -13,13 +13,19 @@
          <h1>Basic DOM Example</h1>
          <h2>The list below has been created by JavaScript via the DOM.</h2>
          <pre class="language-js"><code class="language-js">
-const names = ["Jeff", "Sally", "Jessica", "Selina", "Bobby"]
+const shopping = [
+    'Apple',
+    'Orange',
+    'Strawberry',
+    'Bananas',
+    'Sausages'
+];
 
 const list = document.createElement('ul')
 
 let innerHTML = ""
-for (const name of names) {
-   innerHTML += `&ltli&gt${name}&lt/li&gt`
+for (const item of shopping) {
+   innerHTML += `&ltli&gt${item}&lt/li&gt`
 }
 
 list.innerHTML = innerHTML

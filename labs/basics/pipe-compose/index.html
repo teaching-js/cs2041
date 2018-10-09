@@ -1,0 +1,37 @@
+Write a program <b>pipe-compose.js</b> which returns two
+functions; <b>pipe</b> and <b>compose</b>.
+
+<p>
+Pipe, should work much like the UNIX pipe. The output 
+of the previous function should be piped into the next.
+Pipe should be able to take in a list of functions and execute
+them consecutively. You can expect valid input.
+</p>
+
+<p>
+Compose, should work by 'wrapping' functions, the opposite direction to pipe.
+The deepest call should happen first.
+</p>
+
+<p>To be clear; both functions need to return a function so that
+    input can be passed in.
+</p>
+
+<p>Your starter code should look like this.</p>
+
+<pre>
+<code>
+
+function pipe(...args) {}
+
+function compose(...args) {}
+
+module.exports = {
+    pipe,
+    compose
+}
+</code>
+</pre>
+
+
+
